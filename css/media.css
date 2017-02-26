@@ -1,0 +1,407 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1170px) {
+	
+	.mnu_line .mnu li a{
+		padding: 0 10px;
+	}
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	main ul li:before{
+		top: 3px;
+	}
+
+	.pers_inner .pers_wrap .item img{
+		margin-right: 15px;
+	}
+
+	.pers_inner .pers_wrap .item .name{
+		font-size: 18px;
+	}
+
+	.pers_inner .pers_wrap .item .content{
+		max-width: 50%;
+	}
+
+	main ul li{
+		font-size: 12px;
+	}
+
+	.pers_inner .pers_wrap .item .prof{
+		font-size: 12px;
+	}
+
+	.desk{
+		display: none!important;
+	}
+
+	.mob{
+		display: initial!important;
+	}
+
+	.top_line{
+		height: auto;
+	}
+
+	.mnu_line .cont{
+		min-height: 50px;
+		line-height: 50px;
+		height: auto;
+	}
+
+	.top_line .gn-r{
+		text-align: left;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.top_line .logo{
+		padding: 15px 0;
+		max-width: 50%;
+		padding-right: 15px;
+	}
+
+	.top_line_wrap{
+		text-align: right;
+		font-size: 14px;
+		line-height: 25px;
+
+	}
+
+	.top_line .top_cont{
+		display: inline-block;
+		
+	}
+
+	.mnu_line .mnu{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+		max-width: 550px;
+		text-align: center;
+	}
+
+	.service_wrap .anchors_serv .item{
+		max-width: 49%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+
+	.service_wrap .anchors_serv .item:nth-child(even){
+		margin-right: 0;
+	}
+
+	.serv_wrap .item .content table tr td{
+		font-size: 14px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+	.serv_wrap .item .content{
+		padding-left: 0;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.adv{
+		padding: 20px 0;
+	}
+
+	.adv_wrap,
+	.services_wrap,
+	.personal_wrap + .all_per{
+		font-size: 16px;
+		flex-wrap: wrap;
+	}
+
+	.adv_wrap .item{
+		margin: 15px;
+	}
+
+	.top_line .top_cont{
+		margin-right: 0;
+	}
+
+	.mnu_line .mnu li a{
+		font-size: 16px;
+	}
+
+	.adv_wrap .item p{
+		margin-top: 10px;
+	}
+
+	.dashed_title{
+		margin-bottom: 15px;
+		font-size: 22px;
+	}
+
+	.services{
+		padding-bottom: 15px;
+	}
+
+	.personal_wrap > .item{
+		width: 100%;
+	}
+
+	.personal_wrap > .item .r{
+		width: calc(100% - 155px);
+	}
+
+	.med_pers{
+		padding-bottom: 15px;
+	}
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.map{
+		padding-bottom: 15px;
+	}
+
+	footer .cont{
+		line-height: 20px;
+		height: auto;
+		padding: 10px 15px;
+	}
+
+	footer .cont .bottom_line .bottom_cont{
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	footer .cont .bottom_line .bottom_cont small{
+		line-height: 18px;
+	}
+
+	.personal_wrap > .item .r{
+		min-width: 0;
+	}
+
+	.pers_inner .pers_wrap .item img{
+		display: block;
+		margin: 0 auto 15px;
+	}
+
+	.pers_inner .pers_wrap .item .content{
+		max-width: 100%;
+	}
+
+}
+
+@media only screen and (max-width : 550px){
+
+	.service_wrap .anchors_serv .item:before{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		left: 20px;
+	}
+
+	.service_wrap .anchors_serv .item{
+		padding-left: 90px;
+		text-align: left;
+	}
+
+	.service_wrap .anchors_serv .item:after{
+		right: auto;
+		left: 90px;
+		-webkit-transform: translateX(0) translateY(20px);
+		-ms-transform: translateX(0) translateY(20px);
+		-o-transform: translateX(0) translateY(20px);
+		transform: translateX(0) translateY(20px);
+	}
+
+	.service_wrap .anchors_serv .item{
+		max-width: 100%;
+		margin-right: 0;
+	}
+
+	.btn_toggle_mnu{
+		display: block;
+	}
+
+	.mnu_line .mnu li,
+	.mnu_line .mnu li a{
+		display: block;
+	}
+
+	.mnu_line .mnu li{
+		position: relative;
+	}
+
+	.mnu_line .mnu li:after{
+		width: 80%;
+		height: 1px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #008d58;
+		content: "";
+		display: block;
+		margin: 0 auto;
+	}
+
+	.mnu_line .mnu li:last-of-type:after{
+		display: none;
+	}
+
+	.mnu_line .mnu{
+		display: none;
+	}
+
+	.btn_toggle_mnu.active + .mnu{
+		display: block;
+	}
+
+	.top_line .logo{
+		display: none!important;
+	}
+
+	.top_line_wrap{
+		line-height: 20px;
+		padding: 13px 0 10px;
+		text-align: center;
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header{
+		margin-bottom: 10px;
+	}
+
+	.personal_wrap > .item .r,
+	.personal_wrap > .item .l{
+		width: 100%;
+		padding: 0;
+	}
+
+	.personal_wrap > .item img{
+		width: auto;
+		max-width: 50%;
+	}
+
+	.personal_wrap > .item .l{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.adv_wrap,
+	.services_wrap,
+	.personal_wrap + .all_per,
+	.services_wrap .item{
+		font-size: 14px;
+	}
+
+	.services_wrap .item li.title{
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+
+	.dashed_title:after, .dashed_title:before{
+		display: none;
+	}
+
+	.personal_wrap > .item .r .rasp{
+		padding: 0;
+	}
+
+	main{
+		min-height: calc(100vh - 166px);
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.personal_wrap > .item .r .rasp > .item{
+		display: table;
+		width: 100%;
+	}
+
+	footer .cont .logo_wrap {
+		width: 35%;
+		margin-right: 3%;
+	}
+
+	footer .cont .bottom_line .bottom_cont,
+	.top_line .top_cont{
+		font-size: 12px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
